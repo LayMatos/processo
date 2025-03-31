@@ -1,0 +1,18 @@
+{
+    "jsc": {
+      "parser": {
+        "syntax": "typescript",
+        "tsx": true
+      },
+      "transform": {
+        "react": {
+          "pragma": "React",
+          "runtime": "automatic"
+        }
+      }
+    },
+    "module": {
+      "type": "es6"
+    }
+  }
+  

@@ -62,7 +62,7 @@ O projeto tem como objetivo fornecer uma aplicação que permita aos cidadãos c
 
 1. Clone o repositório:
    ```sh
-   [git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/LayMatos/processo.git)
+   git clone https://github.com/LayMatos/processo.git
 
 2. Acesse o diretório do projeto:
    ```sh

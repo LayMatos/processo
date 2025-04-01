@@ -66,7 +66,7 @@ O projeto tem como objetivo fornecer uma aplicação que permita aos cidadãos c
 
 2. Acesse o diretório do projeto:
    ```sh
-    cd project
+    cd processo
 
 3. Instale as dependências:
     ```sh

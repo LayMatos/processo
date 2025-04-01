@@ -9,7 +9,7 @@ Data de Entrega: [Data de Entrega]
 
 ## Descrição breve do projeto.
 
-breve
+O projeto tem como objetivo fornecer uma aplicação que permita aos cidadãos consultar informações sobre pessoas desaparecidas, utilizando uma API disponibilizada pela Polícia Judiciária Civil de Mato Grosso. Através dessa aplicação, os usuários podem buscar dados sobre desaparecidos, visualizar detalhes dos casos e, se desejado, enviar informações que possam ajudar na localização dessas pessoas. A integração com a API é realizada de forma eficiente, oferecendo uma interface amigável para consultas rápidas e envio de informações diretamente pela plataforma.
 
 ## Tecnologias Utilizadas
 

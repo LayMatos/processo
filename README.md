@@ -1,6 +1,15 @@
 # Nome do Projeto
 
-Descrição breve do projeto.
+## Dados de Inscrição
+Nome: [Seu Nome]
+
+Email: [Seu Email]
+
+Data de Entrega: [Data de Entrega]
+
+## Descrição breve do projeto.
+
+breve
 
 ## Tecnologias Utilizadas
 
@@ -56,68 +65,98 @@ Descrição breve do projeto.
    git clone https://github.com/seu-usuario/seu-repositorio.git
 
 2. Acesse o diretório do projeto:
-  ```cd seu-repositorio
+   ```sh
+    cd seu-repositorio
 
 3. Instale as dependências:
-  ```npm install
+    ```sh
+    npm install
 
-### Execução
+## Execução
 Ambiente de Desenvolvimento
-Para rodar localmente:
-```npm run dev
+- Para rodar localmente:
+     ```sh
+     npm run dev
+
 Acesse em: http://localhost:5173
 
 ## Construção e Execução com Docker
-Construa a imagem Docker:
-```docker build -t nome-do-projeto .
 
-Execute o container:
-```docker run -p 80:80 nome-do-projeto
+- Construa a imagem Docker:
+    ```sh
+    docker build -t project .
+
+- Execute o container:
+    ```sh
+    docker run -p 80:80 project
 
 Acesse em: http://localhost:80
 
 
 ### Executando com Docker Compose
-Suba os serviços:
-```docker-compose up -d
+- Suba os serviços:
+     ```sh
+     docker-compose up -d
+
 Acesse em: http://localhost:80
 
 
 ## Testes
-Para rodar os testes:
-```npm test
+- Para rodar os testes:
+     ```sh
+     npm test
 
-## Estrutura do Projeto
-/
-├── dist/                # Build do projeto
-│   ├── assets/          # Arquivos estáticos gerados
-│   ├── index.html       # Página principal
-│   └── vite.svg         # Ícone do Vite
-├── node_modules/        # Dependências do projeto
-├── public/              # Arquivos públicos
-│   └── vite.svg         # Ícone do Vite
-├── src/                 # Código-fonte do projeto
-│   ├── assets/          # Imagens e recursos
-│   ├── components/      # Componentes reutilizáveis
-│   ├── controllers/     # Lógica de controle das páginas
-│   ├── pages/           # Páginas do projeto
-│   ├── routes/          # Configuração das rotas
-│   ├── service/         # Chamadas à API
-│   ├── styles/          # Estilos globais
-│   ├── utils/           # Funções utilitárias
-├── .gitignore           # Arquivos ignorados pelo Git
-├── .swcrc               # Configuração do SWC
-├── docker-compose.yml   # Configuração do Docker Compose
-├── Dockerfile           # Configuração do Docker
-├── eslint.config.js     # Configuração do ESLint
-├── index.html           # Página principal
-├── nginx.conf           # Configuração do Nginx
-├── package-lock.json    # Controle de versões das dependências
-├── package.json         # Dependências e scripts
-├── postcss.config.cjs   # Configuração do PostCSS
-├── README.MD            # Documentação do projeto
-├── tailwind.config.cjs  # Configuração do Tailwind CSS
-├── tsconfig.app.json    # Configuração do TypeScript para a aplicação
-├── tsconfig.json        # Configuração global do TypeScript
-├── tsconfig.node.json   # Configuração do TypeScript para Node.js
-└── vite.config.ts       # Configuração do Vite
+## Descrição dos Diretórios e Arquivos Principais:
+- dist/: Arquivos gerados após a construção do projeto (build), como o index.html.
+
+- node_modules/: Contém as dependências do projeto.
+
+- public/: Arquivos públicos como imagens e recursos estáticos.
+
+- src/: Diretório com o código-fonte:
+
+    - assets/: Imagens e recursos.
+
+    - components/: Componentes reutilizáveis.
+
+    - controllers/: Lógica de controle.
+
+    - pages/: Páginas da aplicação.
+
+    - routes/: Configuração das rotas.
+
+    - service/: Funções que fazem chamadas para APIs externas.
+
+    - styles/: Arquivos de estilo.
+
+    - utils/: Funções utilitárias.
+
+- .gitignore: Arquivos e pastas que o Git deve ignorar.
+
+- docker-compose.yml: Configuração do Docker Compose.
+
+- Dockerfile: Como criar a imagem Docker para o projeto.
+
+- eslint.config.js: Configuração do ESLint.
+
+- index.html: Página principal.
+
+- nginx.conf: Configuração do servidor web Nginx.
+
+- package-lock.json: Controle de versões das dependências.
+
+- package.json: Dependências e scripts do projeto.
+
+- postcss.config.cjs: Configuração do PostCSS.
+
+- README.md: Documentação do projeto.
+
+- tailwind.config.cjs: Configuração do Tailwind CSS.
+
+- tsconfig.app.json: Configuração do TypeScript para a aplicação.
+
+- tsconfig.json: Configuração global do TypeScript.
+
+- tsconfig.node.json: Configuração do TypeScript para Node.js.
+
+- vite.config.ts: Configuração do Vite.

@@ -1,9 +1,6 @@
-// services/caseService.ts
 import axios from "axios";
 
 const API_BASE_URL = "https://abitus-api.geia.vip/v1";
-
-// Função para buscar os casos filtrados
 export const fetchCases = async (
   name: string,
   ageRangeStart: number,
@@ -33,8 +30,6 @@ export const fetchCases = async (
     return { cases: [], totalPages: 0 };
   }
 };
-
-// Função para buscar detalhes de um caso específico
 export const fetchCaseDetails = async (cases: any[]) => {
   try {
     const detailsPromises = cases.map(async (caseItem) => {

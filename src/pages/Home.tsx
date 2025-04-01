@@ -11,14 +11,10 @@ const Home = () => {
   const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [caseDetails, setCaseDetails] = useState<any[]>([]);
-
-  // Estados dos filtros
   const [name, setName] = useState<string>("");
   const [ageRangeStart, setAgeRangeStart] = useState<number>(0);
   const [ageRangeEnd, setAgeRangeEnd] = useState<number>(0);
   const [gender, setGender] = useState<string>("");
-
-  // Função para buscar os casos usando debounce (para evitar requisições excessivas)
   const fetchCasesDebounced = debounce(() => {
     setLoading(true);
     getCasesWithDetails(name, ageRangeStart, ageRangeEnd, gender, page)
@@ -29,8 +25,6 @@ const Home = () => {
       })
       .finally(() => setLoading(false));
   }, 500);
-
-  // Atualiza os dados quando os filtros ou a página mudam
   useEffect(() => {
     fetchCasesDebounced();
   }, [page, name, ageRangeStart, ageRangeEnd, gender]);
@@ -42,8 +36,6 @@ const Home = () => {
         <h1 className="text-3xl font-semibold mb-6 text-center text-gray-800">
           Desaparecidos e Localizados
         </h1>
-
-        {/* Filtros */}
         <Filter
           name={name}
           setName={setName}
@@ -54,8 +46,6 @@ const Home = () => {
           gender={gender}
           setGender={setGender}
         />
-
-        {/* Exibição dos cards */}
         {loading ? (
           <div className="flex justify-center items-center mt-10">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500"></div>
@@ -72,8 +62,6 @@ const Home = () => {
             )}
           </div>
         )}
-
-        {/* Paginação */}
         <div className="mt-8">
           <Pagination currentPage={page} setPage={setPage} totalPages={totalPages} />
         </div>

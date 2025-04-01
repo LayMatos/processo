@@ -49,11 +49,9 @@ export const useSubmitInfo = (ocoId: number | undefined) => {
     } catch (error) {
       console.error("Erro ao enviar informações:", error);
       if (axios.isAxiosError(error)) {
-        // Caso seja erro do axios, imprima mais detalhes
         console.error("Detalhes do erro:", error.response?.data || error.message);
         setError("Erro ao enviar as informações. Verifique os dados e tente novamente.");
       } else {
-        // Caso seja erro desconhecido
         console.error("Erro inesperado:", error);
         setError("Erro inesperado ao enviar as informações.");
       }

@@ -24,11 +24,7 @@ const Filter: React.FC<FilterProps> = ({
   return (
     <div className="bg-white shadow-lg p-6 rounded-lg mb-6 w-full max-w-7xl mx-auto">
       <h2 className="text-2xl font-semibold mb-4 text-center">Filtros de Pesquisa</h2>
-      
-      {/* Layout Responsivo */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        
-        {/* Nome */}
         <div className="flex flex-col">
           <label htmlFor="name" className="text-gray-700 font-medium">Nome</label>
           <input
@@ -40,8 +36,6 @@ const Filter: React.FC<FilterProps> = ({
             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        {/* Faixa Etária Inicial */}
         <div className="flex flex-col">
           <label htmlFor="ageRangeStart" className="text-gray-700 font-medium">Idade Mínima</label>
           <input
@@ -53,8 +47,6 @@ const Filter: React.FC<FilterProps> = ({
             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        {/* Faixa Etária Final */}
         <div className="flex flex-col">
           <label htmlFor="ageRangeEnd" className="text-gray-700 font-medium">Idade Máxima</label>
           <input
@@ -66,8 +58,6 @@ const Filter: React.FC<FilterProps> = ({
             className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        {/* Sexo */}
         <div className="flex flex-col">
           <label htmlFor="gender" className="text-gray-700 font-medium">Sexo</label>
           <select
@@ -81,7 +71,6 @@ const Filter: React.FC<FilterProps> = ({
             <option value="FEMININO">Feminino</option>
           </select>
         </div>
-
       </div>
     </div>
   );

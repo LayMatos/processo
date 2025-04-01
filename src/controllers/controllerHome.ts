@@ -1,7 +1,5 @@
-// controllers/caseController.ts
 import { fetchCases, fetchCaseDetails } from "../service/serviceHome";
 
-// Função que busca os dados e os organiza para a View
 export const getCasesWithDetails = async (
   name: string,
   ageRangeStart: number,

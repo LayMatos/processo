@@ -1,4 +1,3 @@
-// controllers/detailController.ts
 import { useState, useEffect } from "react";
 import { fetchCaseDetails, CaseDetails } from "../service/serviceDetail";
 

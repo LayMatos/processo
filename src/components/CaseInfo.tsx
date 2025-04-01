@@ -1,4 +1,3 @@
-// src/components/CaseInfo.tsx
 import React from "react";
 import StatusBadge from "./StatusBadge";
 import { formatDate, getDefaultText } from "../utils/formatUtils";

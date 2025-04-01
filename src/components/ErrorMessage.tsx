@@ -1,4 +1,3 @@
-// src/components/ErrorMessage.tsx
 import React from "react";
 
 const ErrorMessage: React.FC<{ message: string }> = ({ message }) => (

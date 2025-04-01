@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom";
 import { useSubmitInfo } from "../controllers/controllerSubmitInfo";
 
 const SubmitInfo = () => {
-  const { ocoId } = useParams(); // O ocoId vem da URL
-  console.log(ocoId); // Verifique se o ocoId é o esperado
+  const { ocoId } = useParams();
+  console.log(ocoId);
   const { formData, loading, error, handleChange, handleFileChange, handleSubmit } = useSubmitInfo(Number(ocoId));
 
   return (

@@ -18,24 +18,24 @@ const Detail: React.FC = () => {
   const isDesaparecido = !caseDetails.ultimaOcorrencia.encontradoVivo;
 
   return (
-    <div className="flex items-center justify-center bg-gray-100 min-h-screen px-4 py-6">
-  <div className="w-full max-w-4xl bg-white shadow-lg rounded-2xl p-6 md:p-8">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
-      <CaseImage urlFoto={caseDetails.urlFoto} nome={caseDetails.nome} />
-      <CaseInfo caseDetails={caseDetails} />
-    </div>
-    {isDesaparecido && (
-      <div className="mt-6 space-y-5">
-        <Link to={`/informar/${id}`}>
-          <button className="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all shadow-md font-semibold text-lg md:text-xl">
-            Informar sobre o desaparecido
-          </button>
-        </Link>
-        <CartazList cartazes={caseDetails.ultimaOcorrencia.listaCartaz} />
+    <div className="flex items-center justify-center bg-gray-100 min-h-screen px-2 py-4">
+      <div className="w-full max-w-4xl bg-white shadow-lg rounded-2xl p-4 md:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+          <CaseImage urlFoto={caseDetails.urlFoto} nome={caseDetails.nome} />
+          <CaseInfo caseDetails={caseDetails} />
+        </div>
+        {isDesaparecido && (
+          <div className="mt-4 space-y-4">
+            <Link to={`/informar/${id}`}>
+              <button className="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all shadow-md font-semibold text-lg md:text-xl">
+                Informar sobre o desaparecido
+              </button>
+            </Link>
+            <CartazList cartazes={caseDetails.ultimaOcorrencia.listaCartaz} />
+          </div>
+        )}
       </div>
-    )}
-  </div>
-</div>
+    </div>
   );
 };
 

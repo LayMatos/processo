@@ -28,8 +28,8 @@ const CaseInfo: React.FC<{ caseDetails: CaseDetails }> = ({ caseDetails }) => (
 
     <StatusBadge isDesaparecido={!caseDetails.ultimaOcorrencia.encontradoVivo} />
 
-    <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold text-gray-700">Última Ocorrência</h2>
+    <div className="bg-gray-100 p-4 rounded-lg shadow-md mb-5">
+      <h2 className="text-xl font-semibold text-gray-700 text-center mb-5">Última Ocorrência</h2>
       <p>
         <strong>Data do desaparecimento:</strong> {formatDate(caseDetails.ultimaOcorrencia.dtDesaparecimento)}
       </p>

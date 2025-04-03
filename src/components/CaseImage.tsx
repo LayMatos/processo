@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { isValidImageUrl } from "../utils/imageUtils";
+import defaultImage from "../assets/default-profile.png";
 
 interface CaseImageProps {
-  urlFoto: string;
+  urlFoto?: string;
   nome: string;
 }
 
-const placeholderImage = "/images/placeholder.png";
+const CaseImage: React.FC<CaseImageProps> = ({ urlFoto, nome }) => {
+  const [imageSrc, setImageSrc] = useState(isValidImageUrl(urlFoto) ? urlFoto : defaultImage);
 
-const CaseImage: React.FC<CaseImageProps> = ({ urlFoto, nome }) => (
-  <div className="w-[320px] h-[320px] flex justify-center items-center overflow-hidden rounded-lg shadow-lg mx-auto">
-    <img
-      src={isValidImageUrl(urlFoto) ? urlFoto : placeholderImage}
-      alt={nome}
-      className="w-full h-full object-cover"
-    />
-  </div>
-);
+  return (
+    <div className="w-[340px] h-[340px] flex justify-center items-center overflow-hidden rounded-xl shadow-xl border-4 border-gray-300 bg-white mx-auto">
+      <img
+        src={imageSrc}
+        alt={nome}
+        className="w-full h-full object-cover"
+        onError={() => setImageSrc(defaultImage)}
+      />
+    </div>
+  );
+};
 
 export default CaseImage;

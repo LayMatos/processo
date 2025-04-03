@@ -33,7 +33,7 @@ const SubmitInfo = () => {
 
           <div>
             <label className="block font-medium text-lg text-gray-700 mb-2" htmlFor="descricao">
-              Descrição do anexo
+              Descrição da Localização
             </label>
             <textarea
               name="descricao"
@@ -63,7 +63,7 @@ const SubmitInfo = () => {
 
           <div>
             <label className="block font-medium text-lg text-gray-700 mb-2" htmlFor="foto">
-              Foto (se disponível)
+              Foto
             </label>
             <input
               type="file"

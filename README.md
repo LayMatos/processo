@@ -1,11 +1,11 @@
 # Aplicação PJCMT
 
 ## Dados de Inscrição
-Nome: [Seu Nome]
+Nome: Layssa Matos Dos Santos
 
-Email: [Seu Email]
+Email: layssamatos8@gmail.com
 
-Data de Entrega: [Data de Entrega]
+Data de Entrega: 01/04/2025
 
 ## Descrição breve do projeto.
 
